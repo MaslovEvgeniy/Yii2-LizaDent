@@ -1,0 +1,67 @@
+.contacts {
+	div {
+		position: relative;
+		display: block;
+	}
+
+	p {
+		font-family: $font_second-stack;
+		font-size: 20px;
+		font-weight: 500;
+		color: #212121;
+	}
+
+	.contact-phone {
+		padding-left: 45px;
+		&:before {
+			content: '\f10b';
+			font-family: 'Fontawesome';
+			font-size: 36px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -24px;
+		}
+	}
+
+	.contact-mail {
+		margin-top: 35px;
+		vertical-align: center;
+		.contact-email {
+			&:before {
+			content: '\f0e0';
+			font-family: 'Fontawesome';
+			font-size: 24px;
+			margin-right: 25px;
+			}
+		}
+		.contact-vk {
+			&:before {
+			content: '\f189';
+			font-family: 'Fontawesome';
+			font-size: 24px;
+			margin-right: 25px;
+			margin-top: -6px;
+			}
+		}
+	}
+
+	.contact-address {
+		padding-top: 35px;
+		padding-left: 45px;
+		&:before {
+			content: '\f041';
+			font-family: 'Fontawesome';
+			font-size: 30px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -3px;
+		}
+	}
+
+	.button-appoint {
+		margin-top: 75px;
+	}
+
+}

@@ -1,0 +1,53 @@
+.navbar {
+	background-color: $color_main;
+	border: 0;
+
+	img {
+		display: inline-block;
+	}
+
+	&-toggle {
+		color: #fff;
+	}
+
+	.nav {
+		display: inline-block;
+		color: #313030;
+
+		li {
+			display: inline-block;
+			color: #313030;
+			margin-right: 20px;
+		}
+
+		li a:hover {
+			background-color: transparent;
+		}
+
+		li:after, li.active:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			border-bottom: 2px solid #fff;
+			transition: 0.2s;
+		}
+
+		li:hover:after, li.active:after {
+			width: 100%;
+		}
+
+		a {
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #313030;
+			font-weight: 600;
+			padding: 5px 0;
+
+			&:focus {
+				background-color: transparent;
+			}
+		}
+	}
+}

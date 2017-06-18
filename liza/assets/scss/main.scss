@@ -1,0 +1,21 @@
+@import "utils/fonts";
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "base/base";
+
+@import "components/articles";
+@import "components/contacts";
+@import "components/buttons";
+@import "components/carousel";
+@import "components/modal-form";
+
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sections";
+
+@import "pages/service";
+
+@import "utils/media";

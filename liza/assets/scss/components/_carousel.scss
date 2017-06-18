@@ -1,0 +1,225 @@
+#service-slider {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+
+    .item {
+        height: 250px;
+        display: inline-block;
+
+        .img-wr {
+            position: relative;
+            height: 130px;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            vertical-align: bottom;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h4 {
+            padding: 12px 0 5px;
+            color: #2b2b2b;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        hr {
+            height: 2px;
+            background-color: #c2c2c2;
+            margin: 0 50px;
+        }
+
+        p {
+            padding: 10px 0 0;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0 45px;
+            color: #171717;
+        }
+    }
+
+    .owl-prev {
+        color: #35d471;
+        position: absolute;
+        left: 0;
+        top: 30%;
+    }
+
+    .owl-next {
+        color: #35d471;
+        position: absolute;
+        right: 0%;
+        top: 30%;
+    }
+}
+
+#clients-slider {
+    background-image: url('../img/clients_background.png');
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    color: #020202;
+
+    .owl-stage-outer {
+        overflow: visible;
+    }
+
+    .item {
+        padding: 0 10px;
+        margin: 0 100px;
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 20px 0 0;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 128px;
+            height: 128px;
+            margin: 0 auto;
+        }
+
+        p {
+            position: relative;
+            max-width: 400px;
+            margin: 20px auto 30px;
+            color: #020202;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            overflow: visible;
+
+            &:before {
+                content: " ";
+                position: absolute;
+                background-image: url(../img/quote-open.png);
+                background-repeat: no-repeat;
+                width: 96px;
+                height: 69px;
+                left: -30%;
+                bottom: -25%;
+            }
+
+            &:after {
+                content: " ";
+                position: absolute;
+                background-image: url(../img/quote-close.png);
+                background-repeat: no-repeat;
+                width: 96px;
+                height: 69px;
+                right: -27%;
+                top: -40%;
+            }
+        }
+    }
+    .owl-prev {
+        color: #555555;
+        position: absolute;
+        left: 1%;
+        top: 50%;
+    }
+
+    .owl-next {
+        color: #555555;
+        position: absolute;
+        right: 1%;
+        top: 50%;
+    }
+}
+
+#team-slider {
+    padding: 0 40px;
+    margin: 60px 0 80px;
+
+    .person {
+        display: inline-block;
+        //min-height: 382px;
+        width: 100%;
+        max-width: 350px;
+        overflow: hidden;
+
+        img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info {
+            position: absolute;
+            padding: 0 20px;
+            bottom: 0;
+            height: 140px;
+            width: 350px;
+            background: rgba(255, 255, 255, 0.7);
+            -webkit-transition: 0.7s;
+            transition: 0.7s;
+
+
+            &:hover {
+                height: 210px;
+
+                p {
+                    visibility: visible;
+                }
+
+                .phone {
+                    visibility: visible;
+                    -webkit-transform: translate(0, -7px);
+                    -moz-transform: translate(0, -7px);
+                    -o-transform: translate(0, -7px);
+                }
+            }
+
+            h4 {
+                color: #171717;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+
+            p {
+                padding: 5px 0;
+                color: #171717;
+                font-size: 18px;
+                font-weight: 300;
+            }
+
+            .phone {
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+
+                visibility: hidden;
+
+                p {
+                    padding: 0;
+                    font-family: 'Segoe UI', sans-serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .owl-prev {
+        color: #2b2b2b;
+        position: absolute;
+        left: 0;
+        top: 45%;
+    }
+    .owl-next {
+        color: #2b2b2b;
+        position: absolute;
+        right: 0%;
+        top: 45%;
+    }
+
+}

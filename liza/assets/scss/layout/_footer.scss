@@ -1,0 +1,26 @@
+footer {
+	background-color: $color_main;
+	height: 160px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-image: url('../img/footer_tooth.png');
+	background-repeat: no-repeat;
+	background-position: 50% 80%;
+	color: $color_navigation;
+
+	.navbar {
+			background-color: transparent;
+	}
+
+	.footer-nav {
+		li {
+			display: inline-block;
+		}
+
+		a {
+			margin-top: 40px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+@mixin title_side-line {
+	content: ' ';
+	width: 32px;
+	height: 2px;
+	background: $color_main;
+	position: absolute;
+	top: 50%;
+}
+
+@mixin article_triangle {
+	position: absolute;
+	content: " ";
+	z-index: 5;
+	left: 30px;
+	width: 0;
+	height: 0;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+}
